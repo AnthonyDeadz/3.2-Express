@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Daniil Tsvetkov" />
+    <meta name="description" content="Test page" />
+    <meta name="keywords" content="test,site,html" />
+    <title>Cleveland</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />   
+  </head>
+
+  <body>    
+
+    <a name="to-the-top"></a>
+
+    <!-- Header: -->
+    <header>
+      <div class="header" id="header">
+        <div>
+          <img class="logo-image" src="https://svgsilh.com/svg/1300236-ffffff.svg" alt="logo">
+        </div>
+        <h1 class="logo-text">Cleveland</h1>
+
+        <input class="header-input" type="text" placeholder="Enter request" />
+        <button class="search-button">
+          <img class="search-button-image" src="https://svgsilh.com/svg/1093184-ffffff.svg" alt="search">
+        </button>
+
+        <!-- Header Nav: -->
+        <nav>
+          <ul class="header-nav">
+            <a href="#" title="Home">Home &#8962</a>
+            <a href="#" title="Catalog">Catalog &#128366</a>
+            <a href="#" class="pop-up-open" title="Cart">Cart &#9285</a>
+            <a href="#" title="Profile">Profile &#9776</a>
+          </ul>          
+        </nav>
+      </div>  
+    </header>
+
+    <!-- Main: -->
+    <main>
+
+      <!-- Welcome Part (intro): -->
+      <div class="welcome-part">
+        <div class="text-container">
+          <div>
+          <img class="logo-image" id="logo-image-2" src="https://svgsilh.com/svg/1300236-ffffff.svg" alt="logo">
+          </div>
+          <h1 class="header-text-welcome-part"> Cleveland </h1>
+          <div class="text-welcome-part">            
+            <p> "Create your own visual style ... Make it unique to you and recognizable to others at the same time."</p> 
+            <br>  
+            <p style="text-align: right;"> - Orson Welles </p>
+            <br>               
+            <p>Choose what suits you best here in <b>Cleveland</b>. Create your own fashion and be the best version of yourself </p>   
+            <br>
+            <p> Welcome </p>       
+          </div> 
+        </div>
+      </div>
+
+      <!-- Product Part (part with cards): -->
+      <div class="product-part"> 
+        <h2 class="header-text-product-part"> Top selling </h2>
+        <div class="cards-container"> 
+
+          <!-- Cards Template: -->
+          <template class="cards-template"> 
+            <div class="card">
+              <img class="card-img"/>
+              <div class="info-container">
+                <div class="product-description">
+                  <p class="product-name"></p> 
+                  
+                  <p class="card-price">Price: $ <span class="price"></span></p>
+                </div>
+                <div class="buttons-container">
+                  <button class="buy-button buy-now">Buy Now</button>    
+                  <button class="buy-button add-to-cart">Add to Cart</button> 
+                </div>
+              </div>
+            </div>
+          </template>          
+          
+        </div>
+      </div>  
+
+    </main> 
+    <aside></aside>
+
+    <!-- Footer: -->
+    <footer>
+      <div class="footer-container">
+        <h3 class="logo-text-in-footer"> Cleveland </h3>
+        <p class="footer-text"> If you are interested in our product, you can sign in here  </p>
+        <button class="sign-in-button"> Sign in </button> <br>          
+        <a href="#to-the-top" class="back-to-top-button"> Back to top </a>               
+      </div>  
+    </footer>
+    </div>
+
+
+    <!-- Pop-up Template: -->
+    <section class="pop-up-parent">
+      <template class="pop-up-template">
+        <div id="pop-up" class="pop-up">      
+          <div class="pop-up-container"> 
+
+            <div class="pop-up-header-container"> 
+              <div class="pop-up-title"> Cart </div>          
+              <a class="close-pop-up"></a>
+            </div>
+
+            <div class="pop-up-table">          
+              <div class="table-text table-name"> Name </div>  
+              <div class="table-text table-amount"> Amount </div> 
+              <div class="table-text table-price"> Price </div>                       
+            </div>
+
+            <div class="pop-up-list"> 
+              <template class="list-template"> 
+                <div class="list-item">
+                  <div class="list-item-title"></div>
+                  <div class="counter-parent"></div>
+                  <div class="price-container"> $
+                    <div class="list-item-price"></div>
+                  </div>
+                  <button class="delete-button">Delete From Cart</div>
+                </div> 
+              </template>
+            </div>
+            
+            <div class="pop-up-footer">
+              <div class="pop-up-table" id="bottom-table">
+                <div class="table-text"> Total:  <span class="total">0 </span> </div>  
+                
+              </div>
+              <button class="pop-up-footer-buttons buy-all-button"> Buy All </button>
+              <button class="pop-up-footer-buttons cont-shopping-button" > Continue Shopping </button>
+            </div>
+
+          </div>
+        </div>        
+      </template>
+    </section>
+    <section>
+      <template class="counter-template">
+        <div class="counter-container">
+          <button class="button-decrease amount-buttons">-</button>
+          <input 
+          class="input-value"
+          type="text"              
+          value="1"
+          data-price="1000"
+          maxlength="4"
+          disabled
+          />
+          <button class="button-increase amount-buttons">+</button>
+        </div>
+      </template>
+    </section>
+  </div>  
+
+  <script src="index.ts"></script>  
+  </body>
+</html>

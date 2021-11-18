@@ -1,0 +1,589 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: 'Andada Pro', serif;
+}
+
+/* Scrollbar: */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(185, 185, 185);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1) inset;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 0, 0);
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(129, 29, 29);
+}
+
+/* Header: */
+.header {
+  background-color: rgb(77, 7, 7);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  box-shadow: 0px 10px 15px black;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin: 11px 7px 10px 10px;
+}
+
+.logo-image:hover {
+  cursor: pointer;
+}
+
+.logo-text {
+  color: white;
+  cursor: pointer;
+  line-height: 80px;
+  display: flex;
+  position: relative;
+}
+
+/* Header nav: */
+.header-nav {
+  list-style: none;
+  display: flex;
+  text-align: right;
+  position: relative;
+  margin: 10px;
+}
+
+.header-nav > a {
+  display: flex;
+  transition-duration: 0.2s;
+  list-style: none;
+  text-decoration: 0;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  font-weight: bold;
+}
+
+.header-nav > a:hover {
+  transition-duration: 0.2s;
+  box-shadow: 0 0 20px black;
+  background: black;
+  border-radius: 10px;
+}
+
+.header-input {
+  transition-duration: 0.2s;
+  border: 1px solid white;
+  background: 0;
+  color: white;
+  position: relative;
+  font-size: 18px;
+  width: 400px;
+  height: 40px;
+  margin: 20px 0px 0px 500px;
+  padding-left: 5px;
+  border-right: none;
+}
+
+.header-input:focus {
+  transition-duration: 0.2s;
+  color: white;
+  background: gray;
+}
+
+.header-input:hover {
+  transition-duration: 0.2s;
+  background-color: rgb(53, 53, 53);
+}
+
+.search-button {
+  transition-duration: 0.2s;
+  background: 0;
+  height: 42px;
+  width: 42px;
+  border: white 1px solid;
+  display: inline-block;
+  position: relative;
+  margin: 20px 100px 0px 0px;
+}
+
+.search-button:hover {
+  background-color: rgb(99, 99, 99);
+  cursor: pointer;
+}
+
+.search-button-image {
+  width: 30px;
+  height: 30px;
+}
+
+/* Welcome part (intro): */
+.welcome-part {
+  color: white;
+  background: url(https://img2.goodfon.ru/original/1440x900/4/73/suit-tie-elegance-shirt.jpg)
+    no-repeat center;
+  background-size: cover;
+  height: 1000px;
+  position: relative;
+  width: 100%;
+  top: 80px;
+}
+
+.text-container {
+  transition-duration: 1s;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  top: 150px;
+  left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container:hover {
+  transition-duration: 1s;
+  background-color: rgb(77, 7, 7);
+  border-radius: 50px;
+  box-shadow: 0 0 20px white;
+}
+
+#logo-image-2 {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  left: 30px;
+  top: 5px;
+  cursor: default;
+}
+
+.header-text-welcome-part {
+  color: white;
+  position: relative;
+  font-size: 90px;
+  top: 23px;
+  left: 35px;
+  height: 50px;
+  cursor: default;
+}
+
+.text-welcome-part {
+  color: white;
+  position: relative;
+  margin: 0px 50px 0px 40px;
+  font-size: 30px;
+  font-style: italic;
+  top: -10px;
+  cursor: default;
+  text-indent: 25px;
+}
+
+/* Product part (part with cards): */
+.product-part {
+  color: white;
+  position: relative;
+  background-color: rgb(24, 24, 24);
+  height: 1600px;
+  width: 100%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.header-text-product-part {
+  position: relative;
+  font-size: 35px;
+  left: 60px;
+  top: 30px;
+  width: 200px;
+  text-decoration-style: dashed;
+}
+
+.cards-container {
+  background: black;
+  position: relative;
+  display: flex;
+  top: 50px;
+  left: 3%;
+  width: 94%;
+  border: 1px solid white;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(44, 44, 44);
+  width: 25%;
+  height: 650px;
+  flex-basis: 21%;
+  margin: 2%;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px white;
+}
+
+.card-img {
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.product-description {
+  background-color: rgb(77, 7, 7);
+  font-size: 20px;
+  padding: 10px;
+  margin-top: -5px;
+}
+
+.product-description:hover {
+  background-color: rgb(102, 34, 34);
+}
+
+.product-name {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 7px;
+}
+
+.buy-button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin: 10px 10px;
+  font-size: 17px;
+  width: 43%;
+  font-weight: bold;
+}
+
+.buy-button:hover {
+  background-color: rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+.buy {
+  background: white;
+  color: black;
+  border: 1px solid rgb(77, 7, 7);
+}
+
+/* Footer: */
+.footer-container {
+  height: 190px;
+  background: black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.logo-text-in-footer {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.footer-text {
+  margin: 10px;
+}
+
+.sign-in-button {
+  transition-duration: 0.2s;
+  margin: 5px;
+  height: 50px;
+  width: 300px;
+  background: rgb(66, 66, 66);
+  color: white;
+  border: 1px solid white;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-in-button:hover {
+  transition-duration: 0.2s;
+  background: rgb(77, 7, 7);
+  border-radius: 15px;
+}
+
+.back-to-top-button {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  background: rgb(77, 7, 7);
+  top: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.back-to-top-button:hover {
+  background: rgb(129, 47, 47);
+}
+
+/* Pop-up: */
+.pop-up {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.685);
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 2;
+}
+
+.pop-up-container {
+  background: rgb(161, 161, 161);
+  width: 1200px;
+  height: 810px;
+  margin: 3% 0% 0% 20%;
+  border-radius: 30px;
+}
+
+.pop-up-header-container {
+  background: rgb(77, 7, 7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 30px 30px 0px 0px;
+  height: 40px;
+  box-shadow: 0px 10px 15px black;
+}
+
+.pop-up-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.close-pop-up {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(45deg);
+  cursor: pointer;
+  margin: 13px 0px 0px 1120px;
+}
+
+.close-pop-up::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transform: translate(0px, 11px);
+}
+.close-pop-up::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 30px;
+  background-color: #fff;
+  transform: translate(11px, 0px);
+}
+
+.close-pop-up:hover::before,
+.close-pop-up:hover::after {
+  background-color: black;
+}
+
+.pop-up-list {
+  background: black;
+  color: white;
+  margin: 20px;
+  height: 500px;
+  overflow: auto;
+  border: 1px solid white;
+  box-shadow: 0px 10px 15px black;
+}
+
+.pop-up-table {
+  color: white;
+  background: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+  line-height: 50px;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-shadow: 0px 10px 15px black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.table-name {
+  margin-left: 40px;
+}
+
+.table-amount {
+  margin-left: 180px;
+}
+
+.table-price {
+  margin-right: 280px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 40px;
+}
+
+.list-item:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.list-item-title {
+  width: 450px;
+  margin-left: 10px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+  margin-top: 5px;
+}
+
+.amount-buttons {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: black;
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+
+.button-increase {
+  margin-left: 5px;
+}
+
+.button-decrease {
+  margin-right: 5px;
+}
+
+.button-increase:hover {
+  cursor: pointer;
+  background: rgb(43, 136, 43);
+}
+
+.button-decrease:hover {
+  cursor: pointer;
+  background: rgb(121, 8, 8);
+}
+
+.input-value {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: black;
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.list-item-price {
+  margin-left: 5px;
+}
+
+.delete-button {
+  color: white;
+  background: black;
+  padding: 10px;
+  border: 1px solid white;
+  height: 40px;
+}
+
+.delete-button:hover {
+  background-color: rgb(77, 7, 7);
+  cursor: pointer;
+}
+
+.pop-up-footer {
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#bottom-table {
+  height: 40px;
+  line-height: 40px;
+  margin-top: -5px;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.pop-up-footer-buttons {
+  transition-duration: 0.2s;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 250px;
+  background-color: rgb(77, 7, 7);
+  color: white;
+  border-style: none;
+  border-radius: 50px;
+  margin: 0px 10px 0px 10px;
+}
+
+.pop-up-footer-buttons:hover {
+  transition-duration: 0.2s;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 10px 15px black;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+/* Scrollbar: */
+.pop-up-list::-webkit-scrollbar {
+  width: 17px;
+}
+
+.pop-up-list::-webkit-scrollbar-track {
+  background: rgb(185, 185, 185);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1) inset;
+}
+
+.pop-up-list::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 0, 0);
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.pop-up-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(129, 29, 29);
+}
