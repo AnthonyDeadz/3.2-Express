@@ -1,21 +1,3 @@
-/*
-    VIEW = public + views (ejs + css)
-    CONTROLLER = controllers
-    MODEL = middlewares + repositories + utils
-
-    public - то, что будет показано "публике", стили css
-
-    views - то, как все будет выглядеть, разметка ejs
-
-    controllers - взаимодействует с компонентами программы и посылает ответы пользователю
-
-    middlewares - что-то типо конструкторов, проверяет совпадают ли данные пользователя с данными сервера, проверяет авторизовался он или нет и т.д.
-
-    repositories - все данные о пользователях хранятся тут
-
-    utils - все функции, работающие с файлами вынесены сюда, данная папка для каких либо вспомогательных, дополнительных функций
-*/
-
 const express = require('express')
 const path = require('path')
 const requestLogger = require('./middlewares/request-logger.middleware')
