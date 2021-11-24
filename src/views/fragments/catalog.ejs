@@ -1,0 +1,21 @@
+<div class="product-part"> 
+    <h2 class="header-text-product-part"> Top selling </h2>
+    <div class="cards-container"> 
+        <% products.forEach(product => { %>
+            <div class="card" id="<%=product.id%>" product-data="<%=JSON.stringify(product)%>">
+                <img class="card-img" src="<%=product.img %>"/>
+                <div class="info-container">
+                  <div class="product-description">
+                    <p class="product-name"><%= product.name %></p> 
+                    <p class="card-price">Price: $ <span class="price"><%= product.price %></span></p>
+                  </div>
+                  <div class="buttons-container">
+                    <button class="buy-button buy-now">Buy Now</button>    
+                    <button class="buy-button add-to-cart" onclick="addProduct(<%= product.id %>)">Add to Cart</button> 
+                  </div>
+                </div>
+              </div>
+        <% }) %>             
+    </div>
+</div>  
+</main> 
