@@ -12,7 +12,7 @@ function addProduct(id) {
     .then((res) => res.json())
     .then((data) => console.log(data))
 
-  const btn = document.getElementById(id).querySelector('buy-button')
+  const btn = document.getElementById(id).querySelector('.add-to-cart')
   btn.innerHTML = 'In Cart'
   btn.classList.add('buy')
   calculation()
@@ -29,7 +29,7 @@ function deleteItem(id) {
   })
 
   document.getElementById(id).remove()
-  const btn = document.getElementById(id).querySelector('buy-button')
+  const btn = document.getElementById(id).querySelector('.add-to-cart')
   btn.innerHTML = 'Add to Cart'
   btn.classList.remove('buy')
   calculation()
