@@ -1,64 +1,80 @@
 <%- include('../fragments/header.ejs') %>
 
 <section class="shopping-cart">
-    <div class="pop-up-template">
-      <div id="pop-up" class="pop-up">      
-        <div class="pop-up-container"> 
-
-          <div class="pop-up-header-container"> 
-            <div class="pop-up-title"> Cart </div>          
-            <a class="close-pop-up" href="/"></a>
-          </div>
-
-          <div class="pop-up-table">          
-            <div class="table-text table-name"> Name </div>  
-            <div class="table-text table-amount"> Amount </div> 
-            <div class="table-text table-price"> Price </div>                       
-          </div>
-
-          <div class="pop-up-list"> 
-            <div class="list-template"> 
-              <% products.forEach(product => { %>
-                <div class="list-item" id="<%=product.id%>"
-                  product-data="<%=JSON.stringify(product)%">
-                  <div class="list-item-title"><%= product.name %></div>
-                  <div class="counter-parent"></div>
-                  <div class="price-container"> $
-                    <div class="list-item-price"><%= product.price %></div>
-                  </div>
-                  <button class="delete-button" onclick="deleteItem(<%= product.id %>)">Delete From Cart</div> 
-                </div> 
-
-                <div class="counter-template">
-                  <div class="counter-container">
-                    <button type="button" class="button-decrease amount-buttons" onclick="decrease(<%= product.id %>)">-</button> 
-                    <input
-                      class="input-value"
-                      type="text"
-                      value="1"
-                      data-price="1000"
-                      maxlength="4"
-                      disabled
-                    />
-                    <button type="button" class="button-increase amount-buttons" onclick="increase(<%= product.id %>)">+</button> 
-                  </div>
-                </div>
-              <% }) %>             
-            </div>
-          </div>
-          
-          <div class="pop-up-footer">
-            <div class="pop-up-table" id="bottom-table">
-              <div class="table-text"> Total:  <span class="total">0 </span> </div>  
-              
-            </div>
-            <button class="pop-up-footer-buttons buy-all-button"> Buy All </button>
-            <button class="pop-up-footer-buttons cont-shopping-button" href="/"> Continue Shopping </button>
-          </div>
-
+  <div class="pop-up-template">
+    <div id="pop-up" class="pop-up">
+      <div class="pop-up-container">
+        <div class="pop-up-header-container">
+          <div class="pop-up-title">Cart</div>
+          <a class="close-pop-up" href="/"></a>
         </div>
-      </div>        
+
+        <div class="pop-up-table">
+          <div class="table-text table-name">Name</div>
+          <div class="table-text table-amount">Amount</div>
+          <div class="table-text table-price">Price</div>
+        </div>
+
+        <div class="pop-up-list">
+          <div class="list-template">
+            <% products.forEach(product => { %>
+            <div
+              class="list-item"
+              id="<%=product.id%>"
+              product-data="<%=JSON.stringify(product)%>"
+            >
+              <div class="list-item-title"><%= product.name %></div>
+              <div class="counter-container">
+                <button
+                  type="button"
+                  class="button-decrease amount-buttons"
+                  onclick="decrease(<%= product.id %>)"
+                >
+                  -
+                </button>
+                <input
+                  class="input-value"
+                  type="number"
+                  value="1"
+                  data-price="1000"
+                  maxlength="4"
+                  disabled
+                />
+                <button
+                  type="button"
+                  class="button-increase amount-buttons"
+                  onclick="increase(<%= product.id %>)"
+                >
+                  +
+                </button>
+              </div>
+              <div class="price-container">
+                $
+                <div class="list-item-price"><%= product.price %></div>
+              </div>
+              <button
+                class="delete-button"
+                onclick="deleteItem(<%= product.id %>)"
+              >
+                Delete From Cart
+              </button>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+        <div class="pop-up-footer">
+          <div class="pop-up-table" id="bottom-table">
+            <div class="table-text">Total: <span class="total">0 </span></div>
+          </div>
+          <button class="pop-up-footer-buttons buy-all-button">Buy All</button>
+          <button class="pop-up-footer-buttons cont-shopping-button" href="/">
+            Continue Shopping
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<%- include('../fragments/footer.ejs'); %> 
+<%- include('../fragments/intro.ejs'); %> <%-
+include('../fragments/footer.ejs'); %>

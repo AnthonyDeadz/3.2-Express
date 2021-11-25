@@ -1,8 +1,1 @@
-[
-  {
-    "id": 1,
-    "img": "//henderson.ru.airee.cloud/uimages/catalog/product/JT1-0219-N/JT1-0219-N-GREY-5-2.jpg",
-    "name": "Costume 1 - there is some kind of description",
-    "price": 599
-  }
-]
+[{"id":2,"img":"//henderson.ru.airee.cloud/uimages/catalog/product/JT1-0222-SS/JT1-0222-SS-BLUE-5-2.jpg","name":"Costume 2 - there is some kind of description","price":399},{"id":2,"img":"//henderson.ru.airee.cloud/uimages/catalog/product/JT1-0222-SS/JT1-0222-SS-BLUE-5-2.jpg","name":"Costume 2 - there is some kind of description","price":399},{"id":2,"img":"//henderson.ru.airee.cloud/uimages/catalog/product/JT1-0222-SS/JT1-0222-SS-BLUE-5-2.jpg","name":"Costume 2 - there is some kind of description","price":399}]
